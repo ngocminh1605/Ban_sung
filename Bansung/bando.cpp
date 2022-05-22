@@ -18,7 +18,7 @@ void BanDoGAME::TaiBanDo( char* tenfile)
 	// tạo ma trận tương đương mảng 2 chiều
 	// mỗi 1 phần tử tương đương 1 ô kích thước 64
 
-	bando_game_.chiso_x = bando_game_.chiso_y = 0; // thời điểm ban đầu đang wor vị trí mặc định là ô vó vị trí [0][0]
+	bando_game_.chiso_x = bando_game_.chiso_y = 0; // thời điểm ban đầu đang ở vị trí mặc định là ô có vị trí [0][0]
 	for (int i = 0; i < HANG_Y_MAX; i++)
 	{
 		for (int j = 0; j < COT_X_MAX; j++)
