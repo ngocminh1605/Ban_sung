@@ -3,7 +3,10 @@ I> Cách lấy chương trình về :
 
 . git clone https://github.com/ngocminh1605/Ban_sung.git
 
+. Hoặc download zip và giải nén
+
 . Vào mục Debug chọn Bansung.exe
+
 
 II> Mô tả chung về trò chơi :
 
