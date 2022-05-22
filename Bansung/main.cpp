@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include "BaseFunction.h"
 #include "BaseObject.h"
 #include "bando.h"
@@ -169,7 +169,6 @@ int main(int argc, char* argv[])
 
     // Để chương trình load ảnh nền liên tục tức là chạy đến khi nào mình báo hủy thì tạo trễ bằng vòng lặp while
     bool thoat_ctr = false;
-    int dieCount = 0;
 
     // set mau hien thi cho thoi gian va cac doi tuong khac
     ThongSoInGame time_game;
@@ -276,7 +275,7 @@ int main(int argc, char* argv[])
                         else
                         {
                             // messagebox
-                            
+                            MessageBox(NULL, _T("BẠN KÓ MUỐN THOÁT ?"), _T("THUA RỒI NHA LEW LEW:))))"), MB_YESNOCANCEL | MB_ICONWARNING);
                             game_crep->GiaiPhong();
                             dong_ctr();
                             SDL_Quit();
@@ -287,6 +286,7 @@ int main(int argc, char* argv[])
                 else
                 {
                     // messagebox
+                    MessageBox(NULL, _T("BẠN KÓ MUỐN THOÁT ?"), _T("THUA RỒI NHA LEW LEW :))))"), MB_YESNOCANCEL | MB_ICONWARNING);
                     game_crep->GiaiPhong();
                     dong_ctr();
                     SDL_Quit();
