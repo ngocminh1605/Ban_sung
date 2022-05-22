@@ -7,13 +7,14 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 
+
 // định nghĩa các biến
 // stactic là biến dạng global
 static SDL_Window* g_window = NULL; // là struct giữ tất cả các thông tin của cửa sổ mà chúng ta tạo ra như size, postion, border, fullscreen.
 static SDL_Event g_sukien; // union chứa tất cả các thông tin của tất cả các event trong bộ thư viện ví dụ như từ bàn phím, chuột,..
 static SDL_Renderer* g_manhinh = NULL; //  là struct xử lý tất cả các công việc rendering lên cửa sổ SDL_Window.
 
-//Thông số màn Hình
+				
 
 const int FPS = 25; // fps là frame per second, số khung hình frame trong một khoảng thời gian
 const int DOCAO_MANHINH = 640; // Màn hình có độ cao cố định 640 pixel
@@ -66,6 +67,14 @@ typedef struct DauVaoDiChuyen
 	int xuong_;
 	int nhay_;
 };
+
+// kiểm tra va chạm giữa 2 đối tượng cần truyền vào tham số x,y,w,h của 2 đối tượng, đối tượng ở đây có thể là viên đạn có thể là
+// nhân vật hoặc là crep
+namespace SDLBaseFunction
+{
+	bool Checkvacham2Obj(const SDL_Rect& doituong1, const SDL_Rect& doituong2);
+}
+
 
 
 #endif // !BASE_FUNCTION_H_

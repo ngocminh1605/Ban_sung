@@ -5,6 +5,8 @@
 
 #include "BaseFunction.h"
 
+
+
 // Class ( lớp ) này là class nền tảng có nhiệm vụ tải ảnh lên màn hình 
 // dù là nhân vật, bản đồ hay quái thì đều dùng hình ảnh
 class BaseObject
