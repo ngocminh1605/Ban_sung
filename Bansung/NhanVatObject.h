@@ -62,6 +62,8 @@ public:
 	//int get_die_count() const { return die; };
 	int get_sinhmenh() const { return sinhmenh; }
 
+	void tru_sinhmenh() { sinhmenh--;  }
+
 private:
 
 	std::vector<VienDan*> list_VienDan; // p_bullet_object, một danh sách các viên đạn

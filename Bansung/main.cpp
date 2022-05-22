@@ -31,7 +31,7 @@ bool KhoiTaoDuLieu()
 
     // tạo cửa số window cho game
     g_window = SDL_CreateWindow(
-        "Ninja Go", 
+        "Ban sung", 
         SDL_WINDOWPOS_UNDEFINED, 
         SDL_WINDOWPOS_UNDEFINED, 
         DORONG_MANHINH, 
@@ -222,7 +222,6 @@ int main(int argc, char* argv[])
         g_nhanvat.HienThiNV(g_manhinh);
 
        // int diecount2 = g_nhanvat.get_die_count();
-        int sinhmenhnv = g_nhanvat.get_sinhmenh();
 
         // sau khi gán vitri_x,y ở hàm SetBanDoXY thì giá trị đã thay đổi , cập nhật vị trí mới
         bando_game.SetBanDo(dulieu_bando);
@@ -260,13 +259,13 @@ int main(int argc, char* argv[])
                 SDL_Rect rect_crep = game_crep->GetRectFrame();
                 bool vacham2 = SDLBaseFunction::Checkvacham2Obj(rect_nhanvat, rect_crep);
                 
-                if (sinhmenhnv > 0 ) // alive
+                if (g_nhanvat.get_sinhmenh() > 0) // alive
                 {
                     if (vacham2 || vacham)
                     {
                         //dieCount++;
-                        sinhmenhnv--;
-                        if (sinhmenhnv > 0) // alive
+                        g_nhanvat.tru_sinhmenh();
+                        if (g_nhanvat.get_sinhmenh() > 0) // alive
                         {
                             // sau khi chết sẽ hồi sinh lại trong số lần chết cho phép
                             g_nhanvat.SetRect(0, 0);
@@ -360,7 +359,7 @@ int main(int argc, char* argv[])
         diemso.RenderText(g_manhinh, DORONG_MANHINH - 500, 30);
 
         // hien thi sinh menh
-        std::string sinhmenhnhanvat = std::to_string(sinhmenhnv);
+        std::string sinhmenhnhanvat = std::to_string(g_nhanvat.get_sinhmenh());
         std::string textsinhmenh("SINH MENH:");
         textsinhmenh += sinhmenhnhanvat;
 
