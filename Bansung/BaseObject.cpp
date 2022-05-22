@@ -17,8 +17,8 @@ BaseObject::~BaseObject()
 
 bool BaseObject::TaiAnh(std::string duongdan, SDL_Renderer* manhinh)
 {
-	GiaiPhong();  // cai cho nay bai 8, hay bai 9 co noi den, nhung anh them truo vao cho em
-	// final varibal texture
+	GiaiPhong(); 
+
 	SDL_Texture* newTexture = NULL; // mặc định là đúng
 
 	// tải ảnh lên từ đường dẫn chỉ định
