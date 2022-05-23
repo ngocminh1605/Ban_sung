@@ -366,7 +366,7 @@ void DoiTuongNhanVat::KiemtraNVvachamBanDo(BanDo& dulieu_bando)
 
 	// kiểm tra chiều ngang
 	int chieucaoMIN = docaoFrame_ < KICHTHUOC_O_LUOI ? docaoFrame_ : KICHTHUOC_O_LUOI;
-	// kiểm tra xem ông nào nhỏ hơn lấy ông đó, giống như ông nào giàu lấy ông đấy làm chồng
+	
 
 	x1 = (vitrihientai_x + giatri_x) / KICHTHUOC_O_LUOI;
 	x2 = (vitrihientai_x + giatri_x + dorongFrame_ - 1) / KICHTHUOC_O_LUOI;
@@ -424,7 +424,7 @@ void DoiTuongNhanVat::KiemtraNVvachamBanDo(BanDo& dulieu_bando)
 
 	// kiểm tra chiều dọc
 	int chieurongMIN = dorongFrame_ < KICHTHUOC_O_LUOI ? dorongFrame_ : KICHTHUOC_O_LUOI; // kiểm tra xem ông nào nhỏ hơn lấy ông đó
-	// giống kiểu ông nào giỏi hơn hơn lấy ông đó làm chồng
+	
 
 	x1 = (vitrihientai_x) / KICHTHUOC_O_LUOI;
 	x2 = (vitrihientai_x + chieurongMIN) / KICHTHUOC_O_LUOI;
