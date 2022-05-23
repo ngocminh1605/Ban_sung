@@ -8,7 +8,6 @@ I> Cách lấy chương trình về :
 (Nếu chưa có MinGW) Tải MinGW Installer https://sourceforge.net/projects/mingw/. Cài đặt MinGW Installer theo mặc định, đến bước hiện ra các package cài đặt image
 
 Tick chọn mingw32-base và mingw32-gcc-g++, ấn vào Installation -> Apply Changes. Sau khi cài xong, vào thư mục mingw vừa cài đặt, vào bin và copy đường dẫn (VD:
-
 C:\MinGW\bin) Add đường dẫn vào PATH trong system variables của environment .
 
 . Vào mục Debug chọn Bansung.exe
