@@ -20,23 +20,23 @@ C:\MinGW\bin) Add đường dẫn vào PATH trong system variables của environ
               
                             Chọn Include Directories : add các đường link 
                             
-                                   + $(SolutionDir)LibSdl2\SDL2-2.0.8\include
+                                   + $(SolutionDir)include
                                    + 
-                                   + $(SolutionDir)LibSdl2\SDL2_image-2.0.3\include
+                                   + $(SolutionDir)SDL2_image-2.0.3\include
                                    + 
-                                   + $(SolutionDir)LibSdl2\SDL2_mixer-2.0.2\include
+                                   + $(SolutionDir)SDL2_mixer-2.0.2\include
                                    + 
-                                   + $(SolutionDir)LibSdl2\SDL2_ttf-2.0.14\include
+                                   + $(SolutionDir)SDL2_ttf-2.0.14\include
                                    + 
                              Chọn Library Directories : add các đường link
                              
-                                   + $(SolutionDir)LibSdl2\SDL2_ttf-2.0.14\lib\x86
+                                   + $(SolutionDir)SDL2_ttf-2.0.14\lib\x86
                                    + 
-                                   + $(SolutionDir)LibSdl2\SDL2_image-2.0.3\lib\x86
+                                   + $(SolutionDir)SDL2_image-2.0.3\lib\x86
                                    + 
-                                   + $(SolutionDir)LibSdl2\SDL2_mixer-2.0.2\lib\x86
+                                   + $(SolutionDir)SDL2_mixer-2.0.2\lib\x86
                                    
-                                   + $(SolutionDir)LibSdl2\SDL2-2.0.8\lib\x86
+                                   + $(SolutionDir)lib\x86
                                    
               .Vào mục Linker chọn Input điền :         SDL2.lib
               
