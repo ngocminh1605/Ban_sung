@@ -13,7 +13,42 @@ C:\MinGW\bin) Add đường dẫn vào PATH trong system variables của environ
 
 . Vào mục Debug chọn Bansung.exe
 
-
+* Nếu muốn chạy trong IDE Visual Studio Code :
+* 
+          + Ấn chuột phải vào project bắn súng rồi chọn properties: 
+          + 
+              . Vào mục VC++ Directories : 
+              
+                            Chọn Include Directories : add các đường link 
+                            
+                                   + $(SolutionDir)LibSdl2\SDL2-2.0.8\include
+                                   + 
+                                   + $(SolutionDir)LibSdl2\SDL2_image-2.0.3\include
+                                   + 
+                                   + $(SolutionDir)LibSdl2\SDL2_mixer-2.0.2\include
+                                   + 
+                                   + $(SolutionDir)LibSdl2\SDL2_ttf-2.0.14\include
+                                   + 
+                             Chọn Library Directories : add các đường link
+                             
+                                   + $(SolutionDir)LibSdl2\SDL2_ttf-2.0.14\lib\x86
+                                   + 
+                                   + $(SolutionDir)LibSdl2\SDL2_image-2.0.3\lib\x86
+                                   + 
+                                   + $(SolutionDir)LibSdl2\SDL2_mixer-2.0.2\lib\x86
+                                   
+                                   + $(SolutionDir)LibSdl2\SDL2-2.0.8\lib\x86
+                                   
+              .Vào mục Linker chọn Input điền :         SDL2.lib
+              
+                                                        SDL2main.lib
+                                                        
+                                                        SDL2_image.lib
+                                                        
+                                                        SDL2_mixer.lib
+                                                        
+                                                        SDL2_ttf.lib
+             
 
 II> Mô tả chung về trò chơi :
 
