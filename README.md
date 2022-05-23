@@ -13,7 +13,6 @@ Cách 2 :
 * Nếu muốn chạy trong Visual Studio Code 2022 :
 
           + Ấn chuột phải vào project bắn súng rồi chọn properties: 
-          <img width="960" alt="Ảnh chụp màn hình 2022-05-23 212325" src="https://user-images.githubusercontent.com/100121817/169852913-25d9e309-0be4-4408-bae8-1cf3431d1fa4.png">
                . Vào mục VC++ Directories : 
                              Chọn Include Directories : add các đường link 
                                    + $(SolutionDir)include
@@ -60,7 +59,7 @@ Chức năng :
 . Quái biết phun lửa để tấn công người chơi
 
 
-Các kỹ thuật được sử dụng trong game : vector, con trỏ và các tham trị, tham chiếu, lớp (cấu trúc), 4 thư viện SDL2 <SDL2_image-2.0.3,SDL2_mixer-2.0.2,SDL2_mixer-2.0.2,SDL2 2.0.8>, ...
+Các kỹ thuật được sử dụng trong game : vector (để quản lý những biến như quái ,viên đạn), con trỏ và các tham trị, tham chiếu, lớp (cấu trúc), 4 thư viện SDL2 <SDL2_image-2.0.3,SDL2_mixer-2.0.2,SDL2_mixer-2.0.2,SDL2 2.0.8>, ...
 
 Hướng phát triển : Game còn có thể cải tiến thêm nhiều chức năng : tạo thêm máu cho quái,tăng lv nhân vật, thêm số lượng băng đạn hạn định,  mở rộng bản đồ hơn, đổi nhân vật, đổi đạn, nâng cấp đạn ,....
 
