@@ -13,12 +13,9 @@ Cách 2 :
 * Nếu muốn chạy trong Visual Studio Code 2022 :
 
           + Ấn chuột phải vào project bắn súng rồi chọn properties: 
-          
-
-          
-              . Vào mục VC++ Directories : 
-              
-                            Chọn Include Directories : add các đường link 
+          <img width="960" alt="Ảnh chụp màn hình 2022-05-23 212325" src="https://user-images.githubusercontent.com/100121817/169852913-25d9e309-0be4-4408-bae8-1cf3431d1fa4.png">
+               . Vào mục VC++ Directories : 
+                             Chọn Include Directories : add các đường link 
                                    + $(SolutionDir)include
                                    + $(SolutionDir)SDL2_image-2.0.3\include
                                    + $(SolutionDir)SDL2_mixer-2.0.2\include 
