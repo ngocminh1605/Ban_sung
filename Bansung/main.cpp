@@ -1,4 +1,4 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 #include "BaseFunction.h"
 #include "BaseObject.h"
 #include "bando.h"
@@ -13,6 +13,7 @@
 BaseObject g_BG; // lưu ảnh để load lên màn hình
 BaseObject g_img_Menu;
 TTF_Font* g_font_text = NULL; // doi tuong font text
+
 
 
 // khởi tạo các thông số môi trường cho SDL
@@ -75,6 +76,8 @@ bool KhoiTaoDuLieu()
         {
             return false;
         }
+        if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) == -1) return false;
+
     }
 
     return success; // trả về giá trị success = true tức là thành công
@@ -136,7 +139,6 @@ std::vector<Crep*> CreateCrepList()
 
 
 
-
 int main(int argc, char* argv[])
 {
 
@@ -183,12 +185,16 @@ int main(int argc, char* argv[])
 
 
     
+    Mix_Music* bgMusic = Mix_LoadMUS("audio/bgMusic.mp3");
+    Mix_PlayMusic(bgMusic,-1);
 
     while (!(thoat_ctr))
     {
         // ngay khi bắt đầu thì hàm class xử lý fps đc bắt đầu
-
         fps.batdau();
+
+        if (!Mix_PlayingMusic())
+            Mix_PlayMusic(bgMusic, -1);
 
         while (SDL_PollEvent(&g_sukien) != 0)
         {
@@ -220,12 +226,12 @@ int main(int argc, char* argv[])
         // hiển thị nhân vật
         g_nhanvat.HienThiNV(g_manhinh);
 
-       // int diecount2 = g_nhanvat.get_die_count();
-
         // sau khi gán vitri_x,y ở hàm SetBanDoXY thì giá trị đã thay đổi , cập nhật vị trí mới
         bando_game.SetBanDo(dulieu_bando);
         // vẽ lại bản đồ
         bando_game.VeBanDo(g_manhinh);
+       // int diecount2 = g_nhanvat.get_die_count();
+
         for (int  i = 0; i < CREP_list.size(); i++)
         {
             Crep* game_crep = CREP_list.at(i);

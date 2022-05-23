@@ -89,7 +89,7 @@ void Crep::HienthiCrep(SDL_Renderer* Crep)
 	// kiểm tra frame hiện tại để trả về hình ảnh frame tương ứng
 	SDL_Rect* current_frame = &framelist[frame_];
 
-	// biến chứa thông tin frame đang ở vị trí nào, độ dài độ rông là bao nhiêu (renderquad)
+	// biến chứa thông thin frame đang ở vị trí nào, độ dài độ rông là bao nhiêu (renderquad)
 	SDL_Rect rectFrame = { rect_.x, rect_.y, w_frame_, h_frame_ };
 	// sử dụng hàm sdl_rendercopy để render tức xuất Nv
 	SDL_RenderCopy(Crep, p_doituong_, current_frame, &rectFrame);
@@ -158,6 +158,7 @@ void Crep::CheckVaCham(BanDo& dulieu_bando)
 
 	// kiểm tra chiều dọc
 	int chieurongMIN = w_frame_ < KICHTHUOC_O_LUOI ? w_frame_ : KICHTHUOC_O_LUOI; // kiểm tra xem ông nào nhỏ hơn lấy ông đó
+	
 
 	x1 = (vitrihientai_x) / KICHTHUOC_O_LUOI;
 	x2 = (vitrihientai_x + chieurongMIN) / KICHTHUOC_O_LUOI;

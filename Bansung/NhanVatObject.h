@@ -99,6 +99,8 @@ private:
 
 	int sinhmenh;
 	//int die;
+
+	Mix_Chunk* hitSound = Mix_LoadWAV("audio/hitSound.wav");
 	
 };
 
