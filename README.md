@@ -7,7 +7,7 @@ Cách 1 :
 
 . Hoặc download zip và giải nén
 
-. Vào mục Debug chọn Bansung.exe
+. Vào mục Debug chọn RUN.exe
 
 Cách 2 :
 * Nếu muốn chạy trong Visual Studio Code 2022 :
