@@ -37,7 +37,7 @@ III> Mô tả chung về trò chơi :
 
 1.Tóm tắt:
 
-Di chuyển nhân vật vượt chướng ngại vật né tránh những viên đạn được bắn ra từ quái và bắn phi tiêu hủy diệt quái. Phải di chuyển đến cuối bản đồ trong vòng 10p và tiêu diệt hết các quái vật.
+Di chuyển nhân vật vượt chướng ngại vật né tránh những viên đạn được bắn ra từ quái và bắn phi tiêu hủy diệt quái. Phải di chuyển đến cuối bản đồ trong vòng 10p và tiêu diệt hết các quái vật.Nhân vật ban đầu được khởi tạo 1 sinh mạng, trong quá trình chơi khi ăn nấm sẽ được cộng thêm 1 điểm sinh mạng,trái lại khi rớt xuống vực, bị trúng đạn do quái bắn ra, hay đụng trúng người quái thì sẽ bị trừ 1 điểm sinh mạng. Khi nào điểm sinh mạng về không thì nhân vật sẽ chết trò chơi kết thúc. 
 
 2.Chức năng :
 
@@ -47,11 +47,11 @@ Di chuyển nhân vật vượt chướng ngại vật né tránh những viên 
        
        + D : sang phải
        
-       + S : nhảy lên
+       + W : nhảy lên
        
        + Chuột trái : bắn phi tiêu
        
-. Ăn nấm để có thể tăng thêm sinh mạng (khi nào sinh mạng = 0 thì sẽ thua)
+. Ăn nấm để có thể tăng thêm sinh mạng (khi nào sinh mạng về 0 thì sẽ thua)
 
 . Bắn quái tăng điểm số (mỗi con 1 điểm)
 
