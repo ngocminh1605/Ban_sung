@@ -32,6 +32,7 @@ Cách 2 :
                                                SDL2_ttf.lib
              
 II> Link youtube mô tả : https://www.youtube.com/watch?v=ex95Zp58tLg
+
 III> Mô tả chung về trò chơi :
 
 1.Tóm tắt:
