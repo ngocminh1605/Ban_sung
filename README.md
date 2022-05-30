@@ -60,13 +60,18 @@ Di chuyển nhân vật vượt chướng ngại vật né tránh những viên 
 . Quái biết phun lửa để tấn công người chơi
 
 
-3.Các kỹ thuật được sử dụng trong game : vector (để quản lý những biến như quái ,viên đạn), con trỏ và các tham trị, tham chiếu, lớp (cấu trúc), 4 thư viện SDL2 <SDL2_image-2.0.3,SDL2_mixer-2.0.2,SDL2_mixer-2.0.2,SDL2 2.0.8>, ...
+IV >Các kỹ thuật được sử dụng trong game : 
++ vector (để quản lý những biến như quái ,viên đạn)
++ con trỏ và các tham trị, tham chiếu
++ lớp (cấu trúc) (quản lý các đối tượng như nhân vật,quái,...)
++ 4 thư viện SDL2 <SDL2_image-2.0.3,SDL2_mixer-2.0.2,SDL2_mixer-2.0.2,SDL2 2.0.8>, ...
+* Ngoài ra còn dùng các công cụ hỗ trợ như : photoshop để edit ảnh và tiled để edit map
 
-Hướng phát triển : Game còn có thể cải tiến thêm nhiều chức năng : tạo thêm máu cho quái,tăng lv nhân vật, thêm số lượng băng đạn hạn định,  mở rộng bản đồ hơn, đổi nhân vật, đổi đạn, nâng cấp đạn ,....
+V >ướng phát triển : Game còn có thể cải tiến thêm nhiều chức năng như là tạo thêm máu cho quái,tăng lv nhân vật, thêm số lượng băng đạn hạn định,  mở rộng bản đồ hơn, đổi nhân vật, đổi đạn, nâng cấp đạn ,....
 
-IV> Kết luận : Lập trình game giúp bản thân làm quen dần với lập trình hướng đối tượng, nâng cao kỹ năng code, biết cách quản lý các chức năng trong game,...
+VI >Kết luận : Lập trình game giúp bản thân làm quen dần với lập trình hướng đối tượng, nâng cao kỹ năng code, biết cách cấu trúc chia file trong một chương trình,
 
-V> Điều tâm đắc rút ra khi hoàn thiện game : Xử lý gần hết được những chức năng mà mình đã đặt ra cho game , biết cách tách 1 chương trình lớn thành nhiều file để dễ dàng quản lý 
+VII >Điều tâm đắc rút ra khi hoàn thiện game : Xử lý gần hết được những chức năng mà mình đã đặt ra cho game , biết cách tách 1 chương trình lớn thành nhiều file để dễ dàng quản lý 
 
 
        
